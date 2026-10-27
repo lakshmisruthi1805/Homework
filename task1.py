@@ -28,36 +28,37 @@ answer12 = "My favourite season is summer."
 answer13 = "My favourite web series is The Family Man."
 answer14 = "I love to go to school because i can meet my best friends and learn new things."
 answer15 = "My family and my friends matter to me the most."
-prompt = input("Prompt: ")
-if prompt == question1:
-    print(f"Response: {answer1}")
-elif prompt == question2: 
-    print(f"Response: {answer2}")
-elif prompt == question3: 
-    print(f"Response: {answer3}")
-elif prompt == question4:
-    print(f"Response: {answer4}")
-elif prompt == question5:
-    print(f"Response: {answer5}")
-elif prompt == question6:
-    print(f"Response: {answer6}")
-elif prompt == question7:
-    print(f"Response: {answer7}")
-elif prompt == question8:
-    print(f"Response: {answer8}")
-elif prompt == question9:
-    print(f"Response: {answer9}")
-elif prompt == question10:
-    print(f"Response: {answer10}")
-elif prompt == question11:
-    print(f"Response: {answer11}")
-elif prompt == question12:
-    print(f"Response: {answer12}")
-elif prompt == question13:
-    print(f"Response: {answer13}")
-elif prompt == question14:
-    print(f"Response: {answer14}")
-elif prompt == question15:
-    print(f"Response: {answer15}")
-else: 
-    print("Sorry I cannot answer this question. My knowledge is limited.")
+while True:
+    prompt = input("Prompt: ")
+    if prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer1}")
+    elif prompt.lower().replace(" ","") in  question2.lower().replace(" ",""): 
+        print(f"Response: {answer2}")
+    elif prompt.lower().replace(" ","") in  question3.lower().replace(" ",""): 
+        print(f"Response: {answer3}")
+    elif prompt.lower().replace(" ","") in  question4.lower().replace(" ",""):
+        print(f"Response: {answer4}")
+    elif prompt.lower().replace(" ","") in  question5.lower().replace(" ",""):
+        print(f"Response: {answer5}")
+    elif prompt.lower().replace(" ","") in  question6.lower().replace(" ",""):
+        print(f"Response: {answer6}")
+    elif prompt.lower().replace(" ","") in  question7.lower().replace(" ",""):
+        print(f"Response: {answer7}")
+    elif prompt.lower().replace(" ","") in  question8.lower().replace(" ",""):
+        print(f"Response: {answer8}")
+    elif prompt.lower().replace(" ","") in  question9.lower().replace(" ",""):
+        print(f"Response: {answer9}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer10}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer11}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer12}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer13}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer14}")
+    elif prompt.lower().replace(" ","") in  question1.lower().replace(" ",""):
+        print(f"Response: {answer15}")
+    else: 
+        print("Sorry I cannot answer this question. My knowledge is limited.")
